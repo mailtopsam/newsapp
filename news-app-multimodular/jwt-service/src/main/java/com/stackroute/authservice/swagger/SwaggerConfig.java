@@ -25,7 +25,7 @@ public class SwaggerConfig {
     }
 
     private Predicate<String> postPaths(){
-        return or(regex("/api/v1/.*"),regex("/api/v1/.*"));
+        return or(regex(".*"),regex("/api/v1/.*"));
     }
     private ApiInfo apiInfo(){
         return  new ApiInfoBuilder().title("News Application JWT Authentication module Documentation")

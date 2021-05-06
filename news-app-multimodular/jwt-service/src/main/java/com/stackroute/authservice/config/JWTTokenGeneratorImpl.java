@@ -22,7 +22,7 @@ public class JWTTokenGeneratorImpl  implements JWTTokenGenerator {
     @Value("${jwt.secret}")
     private String secret;
 
-    @Value("${app.jwttoken.message}")
+    @Value("${jwttoken.message}")
     private String message;
 
     @Override
@@ -32,8 +32,8 @@ public class JWTTokenGeneratorImpl  implements JWTTokenGenerator {
          //Generate JWT token and store in String jwtToken
         jwtToken= Jwts.builder().setSubject(user.getId()).setIssuedAt(new Date()).signWith(SignatureAlgorithm.HS256, secret).compact();
         Map<String, String> jwtTokenMap= new HashMap<>();
-        jwtTokenMap.put("token",jwtToken);
-        jwtTokenMap.put("message",message);
+        jwtTokenMap.put("Token : ",jwtToken);
+        jwtTokenMap.put("Message : ",message);
         return jwtTokenMap;
     }
 }

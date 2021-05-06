@@ -42,12 +42,12 @@ class JWTTokenGeneratorImplTest {
     @Test
     void givenAUserThenShouldReturnExpectedTokenInMap() {
         tokenMap = jwtTokenGenerator.generateToken(user);
-        assertThat(tokenMap.get("token").length()).isGreaterThan(20);
+        assertThat(tokenMap.get("Token : ").length()).isGreaterThan(20);
     }
 
     @Test
     void givenAUserThenShouldReturnExpectedClaimInMap() {
         tokenMap = jwtTokenGenerator.generateToken(user);
-        assertThat(tokenMap.get("message")).isEqualTo("Login Successful");
+        assertThat(tokenMap.get("Message : ")).isEqualTo("Login is Successfull. ");
     }
 }
