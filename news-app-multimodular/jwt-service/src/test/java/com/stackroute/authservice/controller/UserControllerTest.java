@@ -112,13 +112,6 @@ class UserControllerTest {
         verify(service,times(1)).saveUser(any());
     }
 
-    @Test
-    void givenUserIdAndPasswordThenShouldValidateTheProfile() throws Exception {
-        when(service.findByIdAndPassword(user.getId(), user.getPassword())).thenReturn(user);
-        mockMvc.perform(get("/login"))
-                .andExpect(MockMvcResultMatchers.status().isOk());
-
-    }
 
     public static String asJsonString(final Object obj) {
         try {

@@ -26,13 +26,12 @@ public class SwaggerConfig {
         return or(regex("/api/v1/.*"),regex("/api/v1/.*"));
     }
     private ApiInfo apiInfo(){
-        return  new ApiInfoBuilder().title("News Application JWT Authentication module Documentation")
+        return  new ApiInfoBuilder().title("News Application  module Documentation")
                 .description("This is the authentication module of NewsAPI")
-                .contact("Lakshmi.Rajan@ust.com")
-                .license("stackroute")
-                .licenseUrl("www.stackroute.com")
-                .termsOfServiceUrl("abc@gmail.com")
+                .contact("Lakshmi.Rajan@ust.com, Sam.Pulimootil@ust.com, Pooja.Pradeep@ust.com")
                 .version("1.0").build();
+
+
     }
 }
 

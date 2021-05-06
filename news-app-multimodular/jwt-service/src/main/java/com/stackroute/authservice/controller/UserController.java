@@ -71,7 +71,7 @@ public class UserController {
      * Id and Password is validated before token generation
      * If credentials are validated, token is generated
      * otherwise exception is thrown
-     * This handler method maps to"/api/v1/login" using HTTP POST*/
+     * This handler method maps to"login" using HTTP POST*/
 
     @PostMapping("login")
     public ResponseEntity<?> loginUser( @RequestBody User user) {
