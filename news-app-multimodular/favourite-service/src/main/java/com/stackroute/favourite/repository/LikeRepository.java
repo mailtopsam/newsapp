@@ -12,7 +12,7 @@ import java.util.List;
 @Repository
 public interface LikeRepository extends MongoRepository<UserLikes, ObjectId> {
     //get favourite articles by user Id
-    @Query(value = "{emailId :?0}",fields = "{_id:0,likes:0}")
+    @Query(value = "{emailId :?0}",fields = "{_id:0}")
     public List<UserLikes> findByEmailId(String email);
     //get user article from email Id and favourite index
     @Query("{emailId :?0 ,id:?1}")

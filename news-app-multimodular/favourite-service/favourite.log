@@ -1,44 +1,33 @@
-2021-05-07 03:53:52.659  INFO 6256 --- [main] c.s.a.AuthServiceApplicationTests        : No active profile set, falling back to default profiles: default
-2021-05-07 03:53:54.222  INFO 6256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-05-07 03:53:54.321  INFO 6256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85ms. Found 1 JPA repository interfaces.
-2021-05-07 03:53:54.901  INFO 6256 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b7b1edfd-de6b-3ad0-808d-72524c83e7c7
-2021-05-07 03:53:55.369  INFO 6256 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1aee6983' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-05-07 03:53:55.399  INFO 6256 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-05-07 03:53:56.088  INFO 6256 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-05-07 03:53:56.976  INFO 6256 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
-2021-05-07 03:53:57.239  INFO 6256 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-05-07 03:53:57.699  INFO 6256 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-05-07 03:53:59.089  INFO 6256 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-05-07 03:53:59.144  INFO 6256 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2021-05-07 03:54:00.954  INFO 6256 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-05-07 03:54:00.967  INFO 6256 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-05-07 03:54:01.163  WARN 6256 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-05-07 03:54:03.190  INFO 6256 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 8ffae4ba-ad13-4829-b5eb-fac1a20e8642
-
-2021-05-07 03:54:03.475  INFO 6256 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@10ec54c3, org.springframework.security.web.context.SecurityContextPersistenceFilter@2835574b, org.springframework.security.web.header.HeaderWriterFilter@6c39ba30, org.springframework.security.web.authentication.logout.LogoutFilter@62a5e4c7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@64d49e35, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ad0465c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2005d3e0, org.springframework.security.web.session.SessionManagementFilter@43376a03, org.springframework.security.web.access.ExceptionTranslationFilter@4ed096cc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@181909f0]
-2021-05-07 03:54:03.761  WARN 6256 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2021-05-07 03:54:03.762  INFO 6256 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2021-05-07 03:54:03.771  WARN 6256 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2021-05-07 03:54:03.772  INFO 6256 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2021-05-07 03:54:04.192  INFO 6256 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-07 03:54:04.924  WARN 6256 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
-2021-05-07 03:54:05.067  INFO 6256 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2021-05-07 03:54:05.202  INFO 6256 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2021-05-07 03:54:05.421  INFO 6256 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2021-05-07 03:54:05.421  INFO 6256 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2021-05-07 03:54:05.637  INFO 6256 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2021-05-07 03:54:05.639  INFO 6256 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2021-05-07 03:54:06.104  INFO 6256 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2021-05-07 03:54:06.138  INFO 6256 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2021-05-07 03:54:06.138  INFO 6256 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2021-05-07 03:54:06.138  INFO 6256 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2021-05-07 03:54:06.139  INFO 6256 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2021-05-07 03:54:06.139  INFO 6256 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2021-05-07 03:54:06.139  INFO 6256 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2021-05-07 03:54:06.139  INFO 6256 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2021-05-07 03:54:06.229 ERROR 6256 --- [main] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+2021-05-07 03:50:28.895  INFO 5487 --- [main] c.s.f.R.FavouritesRepositoryTest         : No active profile set, falling back to default profiles: default
+2021-05-07 03:50:31.774  INFO 5487 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-05-07 03:50:32.595  INFO 5487 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 809ms. Found 1 MongoDB repository interfaces.
+2021-05-07 03:50:33.265  INFO 5487 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=64629d88-4b11-3293-97f0-dac2b28e4dbe
+2021-05-07 03:50:34.075  INFO 5487 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-05-07 03:50:34.191  INFO 5487 --- [cluster-ClusterId{value='6094b90a1943234dfadc75d3', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:1}] to localhost:27017
+2021-05-07 03:50:34.200  INFO 5487 --- [cluster-ClusterId{value='6094b90a1943234dfadc75d3', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4742808}
+2021-05-07 03:50:34.625  WARN 5487 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-05-07 03:50:34.895  WARN 5487 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-05-07 03:50:36.926  WARN 5487 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-05-07 03:50:36.927  INFO 5487 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-05-07 03:50:36.971  WARN 5487 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-05-07 03:50:36.975  INFO 5487 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-05-07 03:50:37.507  INFO 5487 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-07 03:50:38.506  WARN 5487 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-05-07 03:50:38.802  INFO 5487 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-05-07 03:50:39.231  INFO 5487 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-05-07 03:50:39.743  INFO 5487 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2021-05-07 03:50:39.744  INFO 5487 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2021-05-07 03:50:40.032  INFO 5487 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2021-05-07 03:50:40.035  INFO 5487 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2021-05-07 03:50:40.793  INFO 5487 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-05-07 03:50:40.824  INFO 5487 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-05-07 03:50:40.825  INFO 5487 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-05-07 03:50:40.826  INFO 5487 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-05-07 03:50:40.826  INFO 5487 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-05-07 03:50:40.827  INFO 5487 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-05-07 03:50:40.827  INFO 5487 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-05-07 03:50:40.827  INFO 5487 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-05-07 03:50:41.349 ERROR 5487 --- [main] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
 
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
@@ -98,7 +87,7 @@ com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Con
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.14.RELEASE.jar:5.2.14.RELEASE]
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.14.RELEASE.jar:5.2.14.RELEASE]
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.2.14.RELEASE.jar:5.2.14.RELEASE]
-	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$EnhancerBySpringCGLIB$$e207a356.getEurekaClient(<generated>) ~[spring-cloud-netflix-eureka-client-2.2.3.RELEASE.jar:2.2.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$EnhancerBySpringCGLIB$$795a19c0.getEurekaClient(<generated>) ~[spring-cloud-netflix-eureka-client-2.2.3.RELEASE.jar:2.2.3.RELEASE]
 	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:57) ~[spring-cloud-netflix-eureka-client-2.2.3.RELEASE.jar:2.2.3.RELEASE]
 	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:38) ~[spring-cloud-netflix-eureka-client-2.2.3.RELEASE.jar:2.2.3.RELEASE]
 	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:83) ~[spring-cloud-netflix-eureka-client-2.2.3.RELEASE.jar:2.2.3.RELEASE]
@@ -198,8 +187,8 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
 	... 137 common frames omitted
 
-2021-05-07 03:54:06.245  WARN 6256 --- [main] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
-2021-05-07 03:54:06.252 ERROR 6256 --- [main] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/ip-172-31-44-90.ap-south-1.compute.internal:auth-service:8085 - was unable to refresh its cache! status = Cannot execute request on any known server
+2021-05-07 03:50:41.351  WARN 5487 --- [main] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2021-05-07 03:50:41.352 ERROR 5487 --- [main] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_FAVOURITE-API/ip-172-31-44-90.ap-south-1.compute.internal:favourite-api:8087 - was unable to refresh its cache! status = Cannot execute request on any known server
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.21.jar:1.9.21]
@@ -242,7 +231,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.14.RELEASE.jar:5.2.14.RELEASE]
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.14.RELEASE.jar:5.2.14.RELEASE]
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.2.14.RELEASE.jar:5.2.14.RELEASE]
-	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$EnhancerBySpringCGLIB$$e207a356.getEurekaClient(<generated>) ~[spring-cloud-netflix-eureka-client-2.2.3.RELEASE.jar:2.2.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$EnhancerBySpringCGLIB$$795a19c0.getEurekaClient(<generated>) ~[spring-cloud-netflix-eureka-client-2.2.3.RELEASE.jar:2.2.3.RELEASE]
 	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:57) ~[spring-cloud-netflix-eureka-client-2.2.3.RELEASE.jar:2.2.3.RELEASE]
 	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:38) ~[spring-cloud-netflix-eureka-client-2.2.3.RELEASE.jar:2.2.3.RELEASE]
 	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:83) ~[spring-cloud-netflix-eureka-client-2.2.3.RELEASE.jar:2.2.3.RELEASE]
@@ -324,14 +313,15 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220) ~[junit-rt.jar:na]
 	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53) ~[junit-rt.jar:na]
 
-2021-05-07 03:54:06.258  WARN 6256 --- [main] com.netflix.discovery.DiscoveryClient    : Using default backup registry implementation which does not do anything.
-2021-05-07 03:54:06.270  INFO 6256 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2021-05-07 03:54:06.279  INFO 6256 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2021-05-07 03:54:06.292  INFO 6256 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1620359646291 with initial instances count: 0
-2021-05-07 03:54:06.308  INFO 6256 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AUTH-SERVICE with eureka with status UP
-2021-05-07 03:54:06.317  INFO 6256 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1620359646317, current=UP, previous=STARTING]
-2021-05-07 03:54:06.334  INFO 6256 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/ip-172-31-44-90.ap-south-1.compute.internal:auth-service:8085: registering service...
-2021-05-07 03:54:06.363 ERROR 6256 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+2021-05-07 03:50:41.353  WARN 5487 --- [main] com.netflix.discovery.DiscoveryClient    : Using default backup registry implementation which does not do anything.
+2021-05-07 03:50:41.355  INFO 5487 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2021-05-07 03:50:41.359  INFO 5487 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-05-07 03:50:41.383  INFO 5487 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1620359441382 with initial instances count: 0
+2021-05-07 03:50:41.392  INFO 5487 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application FAVOURITE-API with eureka with status UP
+2021-05-07 03:50:41.404  INFO 5487 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1620359441404, current=UP, previous=STARTING]
+2021-05-07 03:50:41.419  INFO 5487 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_FAVOURITE-API/ip-172-31-44-90.ap-south-1.compute.internal:favourite-api:8087: registering service...
+2021-05-07 03:50:41.442  INFO 5487 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-07 03:50:41.462 ERROR 5487 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
 
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
@@ -383,8 +373,8 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
 	... 29 common frames omitted
 
-2021-05-07 03:54:06.363  WARN 6256 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
-2021-05-07 03:54:06.364  WARN 6256 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/ip-172-31-44-90.ap-south-1.compute.internal:auth-service:8085 - registration failed Cannot execute request on any known server
+2021-05-07 03:50:41.470  WARN 5487 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2021-05-07 03:50:41.473  WARN 5487 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_FAVOURITE-API/ip-172-31-44-90.ap-south-1.compute.internal:favourite-api:8087 - registration failed Cannot execute request on any known server
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.21.jar:1.9.21]
@@ -402,7 +392,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
 
-2021-05-07 03:54:06.367  WARN 6256 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
+2021-05-07 03:50:41.477  WARN 5487 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.21.jar:1.9.21]
@@ -420,26 +410,22 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
 
-2021-05-07 03:54:06.410  INFO 6256 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2021-05-07 03:54:06.445  INFO 6256 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2021-05-07 03:54:06.493  INFO 6256 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2021-05-07 03:54:06.772  INFO 6256 --- [main] c.s.a.AuthServiceApplicationTests        : Started AuthServiceApplicationTests in 15.064 seconds (JVM running for 24.349)
-2021-05-07 03:54:06.851  INFO 6256 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.stackroute.authservice.repository.UserRepositoryTest], using SpringBootContextLoader
-2021-05-07 03:54:06.858  INFO 6256 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.stackroute.authservice.repository.UserRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2021-05-07 03:54:06.858  INFO 6256 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.stackroute.authservice.repository.UserRepositoryTest]: UserRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2021-05-07 03:54:06.878  INFO 6256 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.stackroute.authservice.AuthServiceApplication for test class com.stackroute.authservice.repository.UserRepositoryTest
-2021-05-07 03:54:06.883  INFO 6256 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener]
-2021-05-07 03:54:06.883  INFO 6256 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@313ac50e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6a056d13, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4b11a972, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@77c0457f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1035ec3c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@511966dc, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@17051fb4, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@629b5b96, org.springframework.test.context.event.EventPublishingTestExecutionListener@5df01ff5, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@47c5ad11, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7882f2e2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@40fd518f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1dafe1d2, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@77e86a53, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@189283ae, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3249c81a]
-2021-05-07 03:54:07.712  INFO 6256 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.stackroute.authservice.config.JWTTokenGeneratorImplTest], using SpringBootContextLoader
-2021-05-07 03:54:07.714  INFO 6256 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.stackroute.authservice.config.JWTTokenGeneratorImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2021-05-07 03:54:07.714  INFO 6256 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.stackroute.authservice.config.JWTTokenGeneratorImplTest]: JWTTokenGeneratorImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2021-05-07 03:54:07.734  INFO 6256 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.stackroute.authservice.AuthServiceApplication for test class com.stackroute.authservice.config.JWTTokenGeneratorImplTest
-2021-05-07 03:54:07.735  INFO 6256 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener]
-2021-05-07 03:54:07.738  INFO 6256 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4c9e86a4, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1fb81254, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@315bd2cd, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@49f5758f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@716661b3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2e93e779, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@413195dc, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@230ac978, org.springframework.test.context.event.EventPublishingTestExecutionListener@61a35f53, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@50bac431, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1de8248f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@68dc7f43, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@137efccc, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@156329de, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4973aba1, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@425ee3ab]
-2021-05-07 03:54:09.234  INFO 6256 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application AUTH-SERVICE with eureka with status DOWN
-2021-05-07 03:54:09.234  WARN 6256 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1620359649234, current=DOWN, previous=UP]
-2021-05-07 03:54:09.235  INFO 6256 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/ip-172-31-44-90.ap-south-1.compute.internal:auth-service:8085: registering service...
-2021-05-07 03:54:09.237 ERROR 6256 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+2021-05-07 03:50:41.502  INFO 5487 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-07 03:50:41.512  INFO 5487 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-07 03:50:42.126  INFO 5487 --- [main] c.s.f.R.FavouritesRepositoryTest         : Started FavouritesRepositoryTest in 16.443 seconds (JVM running for 23.076)
+2021-05-07 03:50:42.431  INFO 5487 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:2}] to localhost:27017
+2021-05-07 03:50:42.783  INFO 5487 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.stackroute.favourite.FavouriteApplicationTests], using SpringBootContextLoader
+2021-05-07 03:50:42.785  INFO 5487 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.stackroute.favourite.FavouriteApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-05-07 03:50:42.785  INFO 5487 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.stackroute.favourite.FavouriteApplicationTests]: FavouriteApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-05-07 03:50:42.791  INFO 5487 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.stackroute.favourite.FavouriteApplication for test class com.stackroute.favourite.FavouriteApplicationTests
+2021-05-07 03:50:42.797  INFO 5487 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-05-07 03:50:42.798  INFO 5487 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7dfc0fda, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@775c865f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5410bbdf, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@323dd422, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2f229f60, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3cdf8aa5, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6dc010a2, org.springframework.test.context.event.EventPublishingTestExecutionListener@310045fc, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@ae20523, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4a282c78, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2700609f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@141cee26, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@ecd3a9b, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@58d9cd6]
+2021-05-07 03:50:43.057  INFO 5487 --- [main] c.s.f.service.LikeServiceImplementation  : The article has been saved to Favourites of sam.P@email.com
+2021-05-07 03:50:43.085  INFO 5487 --- [main] c.s.f.service.LikeServiceImplementation  : The mentioned article does not exist in Favourites
+2021-05-07 03:50:43.101  INFO 5487 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application FAVOURITE-API with eureka with status DOWN
+2021-05-07 03:50:43.102  WARN 5487 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1620359443102, current=DOWN, previous=UP]
+2021-05-07 03:50:43.103  INFO 5487 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_FAVOURITE-API/ip-172-31-44-90.ap-south-1.compute.internal:favourite-api:8087: registering service...
+2021-05-07 03:50:43.105 ERROR 5487 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
 
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
@@ -491,8 +477,8 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
 	... 29 common frames omitted
 
-2021-05-07 03:54:09.242  WARN 6256 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
-2021-05-07 03:54:09.243  WARN 6256 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/ip-172-31-44-90.ap-south-1.compute.internal:auth-service:8085 - registration failed Cannot execute request on any known server
+2021-05-07 03:50:43.105  WARN 5487 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2021-05-07 03:50:43.105  WARN 5487 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_FAVOURITE-API/ip-172-31-44-90.ap-south-1.compute.internal:favourite-api:8087 - registration failed Cannot execute request on any known server
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.21.jar:1.9.21]
@@ -510,7 +496,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
 
-2021-05-07 03:54:09.243  WARN 6256 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
+2021-05-07 03:50:43.106  WARN 5487 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.21.jar:1.9.21]
@@ -528,13 +514,11 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
 
-2021-05-07 03:54:09.249  INFO 6256 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-05-07 03:54:09.260  INFO 6256 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2021-05-07 03:54:09.264  INFO 6256 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2021-05-07 03:54:09.302  INFO 6256 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2021-05-07 03:54:09.303  INFO 6256 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2021-05-07 03:54:12.307  INFO 6256 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
-2021-05-07 03:54:12.312 ERROR 6256 --- [SpringContextShutdownHook] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+2021-05-07 03:50:43.126  INFO 5487 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-07 03:50:43.146  INFO 5487 --- [SpringContextShutdownHook] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:2}] to localhost:27017 because the pool has been closed.
+2021-05-07 03:50:43.149  INFO 5487 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2021-05-07 03:50:46.163  INFO 5487 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2021-05-07 03:50:46.167 ERROR 5487 --- [SpringContextShutdownHook] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
 
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
@@ -599,8 +583,8 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
 	... 42 common frames omitted
 
-2021-05-07 03:54:12.313  WARN 6256 --- [SpringContextShutdownHook] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
-2021-05-07 03:54:12.313 ERROR 6256 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/ip-172-31-44-90.ap-south-1.compute.internal:auth-service:8085 - de-registration failedCannot execute request on any known server
+2021-05-07 03:50:46.167  WARN 5487 --- [SpringContextShutdownHook] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2021-05-07 03:50:46.168 ERROR 5487 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_FAVOURITE-API/ip-172-31-44-90.ap-south-1.compute.internal:favourite-api:8087 - de-registration failedCannot execute request on any known server
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.21.jar:1.9.21]
@@ -631,4 +615,4 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1030) ~[spring-context-5.2.14.RELEASE.jar:5.2.14.RELEASE]
 	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:949) ~[spring-context-5.2.14.RELEASE.jar:5.2.14.RELEASE]
 
-2021-05-07 03:54:12.361  INFO 6256 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2021-05-07 03:50:46.237  INFO 5487 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
