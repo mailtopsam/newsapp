@@ -1,0 +1,517 @@
+use project
+create collection("articles")
+
+-------------------------------data to be inserted----------------------------
+db.articles.insertMany([{
+            
+                "id":1,"source": "the-times-of-india",
+                "name": "The Times of India"
+,"country" : "in", "category" : "entertainment",
+            "author": "Vickey Lalwani",
+            "title": "Rishi Kapoor's Death Anniversary: 'I wish to see our sons, Ranbir and Hrithik, on screen together,' says - Times of India",
+            "description": "Rishi Kapoor passed away on April 30, 2020. It has been one year without him. We have missed him a lot. The same ap",
+            "url": "https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/rishi-kapoors-death-anniversary-i-wish-to-see-our-sons-ranbir-and-hrithik-on-screen-together-says-rakesh-roshan-in-an-exclusive-interview/articleshow/82332341.cms",
+            "urlToImage": "https://static.toiimg.com/thumb/mssource-82332397,wsourceth-1070,height-580,overlay-toi_sw,pt-32,y_pad-40,resizemode-75,imgsize-91965/82332397.jpg",
+            "publishedAt": "2021-04-30T16:41:00Z",
+            "content": "Rishi Kapoor passed away on April 30, 2020. It has been one year without him. We have missed him a lot. The same applies to his friends and family, obviously. We caught up with Rishi's close friend R… [+3476 chars]"
+        },
+        {
+            
+                "id":2,"source": "sportskeeda",
+                "name": "Sportskeeda"
+,"country" : "in", "category" : "entertainment",
+            "author": "Lennard Surrao",
+            "title": "Randy Orton says a former WWE Champion shows up backstage regularly despite having no TV role - Sportskeeda",
+            "description": "Randy Orton is one of the most respected names in the business, and he is currently one of the locker room leaders in the WWE.",
+            "url": "https://www.sportskeeda.com/wwe/news-randy-orton-says-former-wwe-champion-shows-backstage-regularly-despite-tv-role",
+            "urlToImage": "https://staticg.sportskeeda.com/editor/2021/04/33ed6-16197978483804-800.jpg",
+            "publishedAt": "2021-04-30T16:10:35Z",
+            "content": "Randy Orton is one of the most respected names in the business, and he is currently one of the locker room leaders in the WWE.\r\nOrton recently appeared on The Kurt Angle Show, and he opened up about … [+2275 chars]"
+        },
+        {
+            
+                "id":3,"source": "hindustantimes",
+                "name": "Hindustan Times"
+,"country" : "in", "category" : "entertainment",
+            "author": "HT Entertainment Desk",
+            "title": "Kangana Ranaut reacts as Twitter user says she's not helping needy amsource pandemic like Alia Bhatt or Priyanka Chopra - Hindustan Times",
+            "description": "Kangana Ranaut hit back at two Twitter users, one of whom suggested that she was not helping amplify calls for Covsource-19 resources for patients, unlike Priyanka Chopra and Alia Bhatt.",
+            "url": "https://www.hindustantimes.com/entertainment/bollywood/kangana-ranaut-reacts-as-twitter-user-says-she-s-not-helping-needy-amsource-pandemic-like-alia-bhatt-or-priyanka-chopra-101619790528263.html",
+            "urlToImage": "https://images.hindustantimes.com/img/2021/04/30/1600x900/Kangana1_1619792952346_1619792960187.jpg",
+            "publishedAt": "2021-04-30T14:50:26Z",
+            "content": "Kangana Ranaut shot back at Twitter users who questioned her role in helping Indians suffering during the Covsource-19 pandemic. She sasource social media was not the only way to help others.\r\nA Twitter user… [+2497 chars]"
+        },
+        {
+            
+                "id":4,"source": "google-news",
+                "name": "Google News"
+,"country" : "in", "category" : "entertainment",
+            "author": null,
+            "title": "US-based Indians feel 'helpless' as India grapples with worsening Covsource-19 crisis - South China Morning Post",
+            "description": null,
+            "url": "https://news.google.com/__i/rss/rd/articles/CBMiK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9dHVlZFJKbk10Wm_SAQA?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2021-04-30T14:31:11Z",
+            "content": null
+        },
+        {
+            
+                "id":5,"source": "bollywoodhungama",
+                "name": "Bollywood Hungama"
+,"country" : "in", "category" : "entertainment",
+            "author": "Bollywood Hungama",
+            "title": "Randhir Kapoor to sell ancestral RK house; will live closer to his daughters Kareena and Karisma and wife Babita - Bollywood Hungama",
+            "description": "Randhir Kapoor to sell ancestral RK house; will live closer to his daughters Kareena and Karisma and wife Babita. Bollywood News: Latest Bollywood News, Bollywood News Today, Bollywood Celebrity News, Breaking News, Celeb News, Celebrities News, Bollywood New…",
+            "url": "https://www.bollywoodhungama.com/news/bollywood/randhir-kapoor-sell-ancestral-rk-house-will-live-closer-daughters-kareena-karisma-wife-babita/",
+            "urlToImage": "https://stat1.bollywoodhungama.in/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-30-at-6.50.37-PM-1.jpeg",
+            "publishedAt": "2021-04-30T14:06:43Z",
+            "content": "Veteran actor Randhir Kapoor is currently hospitalized after he contracted COVsource-19. He was admitted to the Kokilaben Ambani Hospital on Wednesday. Meanwhile, it has been reported that the senior act… [+1195 chars]"
+        },
+        {
+            
+                "id":6,"source": "indiaglitz",
+                "name": "IndiaGlitz.com"
+,"country" : "in", "category" : "entertainment",
+            "author": "IndiaGlitz",
+            "title": "Shruti Haasan's Thamizh Ponnu mask photo goes viral - Tamil News - IndiaGlitz.com",
+            "description": "Shruti Haasan has earned a name for herself as a self-made multitalented entertainer even though being the daughter of the legendary Kamal Haasan. She was recently seen in a pivotal r",
+            "url": "https://www.indiaglitz.com/actress-shruti-haasan-thamizh-ponnu-mask-photos-viral-laabam-salaar-tamil-news-285657",
+            "urlToImage": "https://1847884116.rsc.cdn77.org/tamil/news/social/shrutimaskvd1-f2c-f24.jpg",
+            "publishedAt": "2021-04-30T13:51:45Z",
+            "content": null
+        },
+        {
+            
+                "id":7,"source": "the-times-of-india",
+                "name": "The Times of India"
+,"country" : "in", "category" : "entertainment",
+            "author": "Mumbai Mirror",
+            "title": "Kangana gives 'warning' to those crying about India to 'foreign daddies' - Mumbai Mirror",
+            "description": "In the vsourceeo, Kangana speaks about how photos of corpses burning at cremations were featured in an international magazine.",
+            "url": "https://mumbaimirror.indiatimes.com/coronavirus/news/kangana-gives-warning-to-those-crying-about-india-to-foreign-daddies/articleshow/82330208.cms",
+            "urlToImage": "https://static.toiimg.com/photo/imgsize-323885,mssource-82330196/82330196.jpg",
+            "publishedAt": "2021-04-30T13:42:00Z",
+            "content": "Actress Kangana Ranaut\r\n shared a vsourceeo on Frsourceay warning those who are trying to hurt the image of the nation internationally amsource the Covsource-19\r\n second wave.\r\nKangana shared the vsourceeo message on Tw… [+765 chars]"
+        },
+        {
+            
+                "id":8,"source": "hindustantimes",
+                "name": "Hindustan Times"
+,"country" : "in", "category" : "entertainment",
+            "author": "HT Entertainment Desk",
+            "title": "Jasmin Bhasin talks about relationship with Aly Goni: 'What is dating phase exactly? It's the same between us' - Hindustan Times",
+            "description": "Actor Jasmin Bhasin talked about her relationship with Aly Goni, post Bigg Boss 14. Explained how nothing has changed between them.",
+            "url": "https://www.hindustantimes.com/entertainment/tv/jasmin-bhasin-talks-about-relationship-with-aly-goni-what-is-dating-phase-exactly-it-s-the-same-between-us-101619780851137.html",
+            "urlToImage": "https://images.hindustantimes.com/img/2021/04/30/1600x900/Jasmin_1619786996229_1619787004654.jpg",
+            "publishedAt": "2021-04-30T13:30:28Z",
+            "content": "Actor Jasmin Bhasin and Aly Goni have gone from being friends to being in a relationship, with much of the change happening during their stint in Bigg Boss 14. Now, in an interview, Jasmin has spoken… [+1879 chars]"
+        },
+        {
+            
+                "id":9,"source": "ndtv",
+                "name": "NDTV News"
+,"country" : "in", "category" : "entertainment",
+            "author": null,
+            "title": "Milind Soman, \"Ready To Donate Plasma In Another 10 Days,\" Wrote This - NDTV",
+            "description": "Milind Soman is currently recuperating after testing positive for COVsource-19 and has sasource that he would be donating plasma soon",
+            "url": "https://www.ndtv.com/entertainment/milind-soman-ready-to-donate-plasma-in-another-10-days-wrote-this-2425408",
+            "urlToImage": "https://c.ndtvimg.com/2021-04/f49h0jf_milind-soman-_625x300_30_April_21.jpg",
+            "publishedAt": "2021-04-30T12:38:56Z",
+            "content": "Milind Soman shared this image. (courtesy milindusharunning)\r\nHighlights\r\n<ul><li>\"Feels like l've most completely recovered,\" Milind wrote \r\n</li><li>\"Stay calm,\" wrote the actor \r\n</li><li>\"Take ca… [+1978 chars]"
+        },
+        {
+            
+                "id":10,"source": "indianexpress",
+                "name": "The Indian Express"
+,"country" : "in", "category" : "entertainment",
+            "author": "Arushi Jain",
+            "title": "What to watch this weekend: Nomadland, Vakeel Saab and LOL – Hasse Toh Phasse among others - The Indian Express",
+            "description": "Keep your favourite snack ready, as we list all the films and web series you can binge-watch this weekend.",
+            "url": "https://indianexpress.com/article/entertainment/web-series/what-to-watch-this-weekend-nomadland-vakeel-saab-and-lol-hasse-toh-phasse-7296690/",
+            "urlToImage": "https://images.indianexpress.com/2021/04/streaming-this-weekend-.jpg",
+            "publishedAt": "2021-04-30T12:32:17Z",
+            "content": "While these are the times filled with anxiety and uncertainty, we also seek some joy and distraction as we do our bit by staying at home and maintaining social distancing. For those who have time in … [+5667 chars]"
+        },
+        {
+            
+                "id":11,"source": "gulte",
+                "name": "Gulte"
+,"country" : "in", "category" : "entertainment",
+            "author": "News Desk",
+            "title": "Rana Signs Pan India Project - Gulte",
+            "description": "Rana Daggubati has signed his next film, a Pan India project. It is learnt that Rana was impressed with the story sourced by senior producer Achanta Gopinath and given the nod. The more details about the story and other cast is still awaited. For beginners, A…",
+            "url": "https://www.gulte.com/movienews/84151/rana-signs-pan-india-project",
+            "urlToImage": "https://cdn.gulte.com/wp-content/uploads/2020/07/RAna-DAggubati-660x330.jpg",
+            "publishedAt": "2021-04-30T12:25:46Z",
+            "content": "Rana Daggubati has signed his next film, a Pan India project. It is learnt that Rana was impressed with the story sourced by senior producer Achanta Gopinath and given the nod. The more details about… [+881 chars]"
+        },
+        {
+            
+                "id":12,"source": "gulte",
+                "name": "Gulte"
+,"country" : "in", "category" : "entertainment",
+            "author": "Satya",
+            "title": "Sreekaram Emerges As Winner on OTT - Gulte Sreekaram - Gulte",
+            "description": "Sharwanand's Sreekaram recently had its digital premiere on Sun Nxt, the OTT Platform of Sun Network. People have been taking to social media to appreciate the team for their genuine attempt. Furthermore, the movie end up as a winner on the OTT. \"It is the mo…",
+            "url": "https://www.gulte.com/movienews/84155/sreekaram-emerges-as-winner-on-ott",
+            "urlToImage": "https://cdn.gulte.com/wp-content/uploads/2021/03/Sreekaram-1-660x330.jpg",
+            "publishedAt": "2021-04-30T12:23:20Z",
+            "content": "Sharwanand’s Sreekaram recently had its digital premiere on Sun Nxt, the OTT Platform of Sun Network. People have been taking to social media to appreciate the team for their genuine attempt. Further… [+624 chars]"
+        },
+        {
+            
+                "id":13,"source": "zee5news",
+                "name": "Zee5.com"
+,"country" : "in", "category" : "entertainment",
+            "author": "DAM",
+            "title": "Kumkum Bhagya 3 May 2021 Written Update: Pragya’s concrete proof against Tanu - ZEE5 News",
+            "description": "To know what happens next on Kumkum Bhagya, watch the premiere episode on ZEE5 before TV!",
+            "url": "https://www.zee5.com/zee5news/kumkum-bhagya-3-may-2021-written-update-pragyas-concrete-proof-against-tanu",
+            "urlToImage": "https://s3images.zee5.com/wp-content/uploads/sites/7/2021/04/00000084-1.jpg",
+            "publishedAt": "2021-04-30T12:09:10Z",
+            "content": "In the previous episode of Kumkum Bhagya, Rhea confronts Ranbeer for being with Prachi. A frustrated Ranbeer holds Rhea responsible for the clashes at home. Meanwhile, Sahana and Prachi discuss Ranbe… [+1118 chars]"
+        },
+        {
+            
+                "id":14,"source": "the-times-of-india",
+                "name": "The Times of India"
+,"country" : "in", "category" : "entertainment",
+            "author": "TIMESOFINDIA.COM",
+            "title": "Sugandha Mishra-Dr. Sanket Bhosale tying the knot to Mohit and Addite Malik becoming parents to a baby boy; Top TV news of the week - Times of India",
+            "description": "The past one week had quite a lot happening around in the telly land. From weddings, babies, revelations and many highs and lows. Sugandha-Sanket’s wedding, Rahul Vasourceya’s pay in KKK11, Hina Khan’s dad, there's a lot more. So you don't miss out on anything im…",
+            "url": "https://timesofindia.indiatimes.com/tv/news/hindi/sugandha-mishra-dr-sanket-bhosale-tying-the-knot-to-mohit-and-addite-malik-becoming-parents-to-a-baby-boy-top-tv-news-of-the-week/photostory/82326823.cms",
+            "urlToImage": "https://static.toiimg.com/photo/82326943.cms",
+            "publishedAt": "2021-04-30T12:00:00Z",
+            "content": "Actress Aashka Goradia has quit acting as she decsourcees to pursue another dream of hers now. The actress who has been a part of popular TV shows like Kkusum, Baalveer and others, wants to be an entrepr… [+402 chars]"
+        },
+        {
+            
+                "id":15,"source": "news18",
+                "name": "News18"
+,"country" : "in", "category" : "entertainment",
+            "author": "Buzz Staff",
+            "title": "Salman Khans No-kiss Policy Intact? Fans Notice Tape on Disha Patanis Mouth in Radhe Trailer - News18",
+            "description": "Salman Khan may have not ended his \"no-kiss\" policy on-screen with his latest movie Radhe: Your Most Wanted Bhai after all.",
+            "url": "https://www.news18.com/news/buzz/salman-khans-no-kiss-policy-intact-fans-notice-tape-on-disha-patanis-mouth-in-radhe-trailer-3692099.html",
+            "urlToImage": "https://images.news18.com/ibnlive/uploads/2021/04/1619783845_untitled-design-2021-04-30t171608.202.png",
+            "publishedAt": "2021-04-30T11:59:09Z",
+            "content": "Salman Khan may have not ended his “no-kiss\" policy on-screen with his latest movie Radhe: Your Most Wanted Bhai after all. If you have been away, a few days ago, the trailer of Khan’s upcoming movie… [+1267 chars]"
+        },
+        {
+            
+                "id":16,"source": "the-times-of-india",
+                "name": "The Times of India"
+,"country" : "in", "category" : "entertainment",
+            "author": "TIMESOFINDIA.COM",
+            "title": "Shehnaaz Gill sings Peaches by Justin Bieber; asks, 'Kaun kehta hai mujhe English nahi aati?' - Times of India",
+            "description": "Shehnaaz Gill knows how to win the hearts of her fans. Now that the country is seeing a surge in the number of Covi",
+            "url": "https://timesofindia.indiatimes.com/tv/news/hindi/shehnaaz-gill-sings-peaches-by-justin-bieber-asks-kaun-kehta-hai-mujhe-english-nahi-aati/articleshow/82328127.cms",
+            "urlToImage": "https://static.toiimg.com/thumb/mssource-82328127,wsourceth-1070,height-580,overlay-toi_sw,pt-32,y_pad-40,resizemode-75,imgsize-202829/82328127.jpg",
+            "publishedAt": "2021-04-30T11:33:00Z",
+            "content": null
+        },
+        {
+            
+                "id":17,"source": "indianexpress",
+                "name": "The Indian Express"
+,"country" : "in", "category" : "entertainment",
+            "author": "Entertainment Desk",
+            "title": "KV Anand (1966-2021): ‘Indian cinema has lost another gem’ - The Indian Express",
+            "description": "Tamil director-cinematographer KV Anand passed away on Frsourceay in Chennai due to Covsource-19 related complications. He was 54.",
+            "url": "https://indianexpress.com/article/entertainment/tamil/kv-anand-dies-celebrities-pay-condolences-7296358/",
+            "urlToImage": "https://images.indianexpress.com/2021/04/kv-anand.jpeg",
+            "publishedAt": "2021-04-30T11:28:27Z",
+            "content": "Director-cinematographer KV Anand passed away on Frsourceay. (Photo: Gautham Karthik/Twitter)\r\nTamil director-cinematographer KV Anand died on Frsourceay in Chennai due to Covsource-19 related complications. He … [+1181 chars]"
+        },
+        {
+            
+                "id":18,"source": "bollywoodhungama",
+                "name": "Bollywood Hungama"
+,"country" : "in", "category" : "entertainment",
+            "author": "Bollywood Hungama",
+            "title": "Shooter dadi Chandro Tomar succumbs to COVsource-19; Taapsee Pannu and Bhumi Pednekar express grief - Bollywood Hungama",
+            "description": "Shooter dadi Chandro Tomar succumbs to COVsource-19; Taapsee Pannu and Bhumi Pednekar express grief. Bollywood News: Latest Bollywood News, Bollywood News Today, Bollywood Celebrity News, Breaking News, Celeb News, Celebrities News, Bollywood News Hindi, Hindi Bo…",
+            "url": "https://www.bollywoodhungama.com/news/bollywood/shooter-dadi-chandro-tomar-succumbs-covsource-19-taapsee-pannu-bhumi-pednekar-express-grief/",
+            "urlToImage": "https://stat1.bollywoodhungama.in/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-30-at-4.16.19-PM.jpeg",
+            "publishedAt": "2021-04-30T11:27:31Z",
+            "content": "India is currently facing the worst of the second wave of the COVsource-19 pandemic. Amsource this, octogenarian shooter Chandro Tomar, nicknamed Shooter Dadi has succumbed to COVsource-19. She was hospitalised … [+2259 chars]"
+        },
+        {
+            
+                "id":19,"source": "the-times-of-india",
+                "name": "The Times of India"
+,"country" : "in", "category" : "entertainment",
+            "author": "Neha Maheshwri",
+            "title": "Aniruddh Dave is in the ICU, but his health is improving: Ajay Singh Chaudhary - Times of India",
+            "description": "Actor Aniruddh Dave, who was last seen in Shakti - Astitva Ke Ehsaas Ki, has tested positive for COVsource-19. He was s",
+            "url": "https://timesofindia.indiatimes.com/tv/news/hindi/aniruddh-dave-is-in-the-icu-and-his-health-is-improving-ajay-singh-chaudhary/articleshow/82327915.cms",
+            "urlToImage": "https://static.toiimg.com/thumb/mssource-82328667,wsourceth-1070,height-580,overlay-toi_sw,pt-32,y_pad-40,resizemode-75,imgsize-200798/82328667.jpg",
+            "publishedAt": "2021-04-30T11:24:00Z",
+            "content": null
+        },
+        {
+            
+                "id":20,"source": "indiatoday",
+                "name": "India Today"
+,"country" : "in", "category" : "entertainment",
+            "author": null,
+            "title": "Nia Sharma has a message for woke celebs urging people to get vaccinated. Read tweet - India Today",
+            "description": "Nia Sharma recently took to Twitter to take a dig at the celebrities who were urging their fans to get vaccinated. She asked them to name the centres which were provsourceing vaccine for people.",
+            "url": "https://www.indiatoday.in/television/celebrity/story/nia-sharma-has-a-message-for-woke-celebs-urging-people-to-get-vaccinated-read-tweet-1796697-2021-04-30",
+            "urlToImage": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202104/161926557_449209029694256_3952-647x363.jpeg?jQWUIzRqotyZy8UAQ8vdWyWPfx5vQPPa",
+            "publishedAt": "2021-04-30T11:18:31Z",
+            "content": "The central government recently announced that the Covsource-19 vaccination will open for all above 18 years. This will commence from May 1. As soon as the decision was announced, many celebrities took t… [+2174 chars]"
+        },
+{
+            
+                "id":21,"source": "the-hill",
+                "name": "The Hill"
+,"country" : "us", "category" : "health",
+            "author": "Christian Spencer",
+            "title": "Pro-Trump and anti-vax sites urging people to forge COVID-19 vaccination cards, says CDC | TheHill - The Hill",
+            "description": "There's absolutely nothing about it that would prevent you from reproducing it, said one expert.",
+            "url": "https://thehill.com/changing-america/well-being/prevention-cures/551275-pro-trump-and-anti-vax-sites-urging-people-to",
+            "urlToImage": "https://thehill.com/sites/default/files/ca.vac_card_gettyimages-1230169189.jpg",
+            "publishedAt": "2021-04-30T23:16:04Z",
+            "content": "Some former President Trump supporters and anti-vaxxers are forging vaccine cards using a government-issued template to falsely state they received their shots.\r\nNBC News reports that people are maki… [+2377 chars]"
+        },
+
+        {
+            
+                "id":22,"source": "wcvb",
+                "name": "WCVB Boston"
+,"country" : "us", "category" : "health",
+            "author": null,
+            "title": "More than 2.5 million in Massachusetts now fully vaccinated against COVID-19 - WCVB Boston",
+            "description": "The Massachusetts Department of Public Health has released the latest COVID-19 case numbers for the state.",
+            "url": "https://www.wcvb.com/article/massachusetts-covid-19-cornonavirus-numbers-daily-update-april-30-2021/36304049",
+            "urlToImage": "https://kubrick.htvapps.com/htv-prod-media.s3.amazonaws.com/images/ap-covid-coronavirus-microscopic-1613334724.jpg?crop=1.00xw:0.880xh;0,0.120xh&resize=1200:*",
+            "publishedAt": "2021-04-30T21:05:00Z",
+            "content": "BOSTON —The Massachusetts Department of Public Health reported an additional 1,179 confirmed COVID-19 cases Friday, bringing the statewide total to 645,867 since the start of the pandemic.\r\nState hea… [+1014 chars]"
+        },
+        {
+            
+                "id":23,"source": "gizmodo",
+                "name": "Gizmodo.com"
+,"country" : "us", "category" : "health",
+            "author": "Dharna Noor",
+            "title": "The Release of 1 Billion Exterminator Mosquitoes Has Begun - Gizmodo",
+            "description": "The first of 1 billion genetically modified mosquitoes were released in Florida this week. It’s part of a plan to curb insect-borne disease like Zika virus and dengue fever—but it’s giving some folks the heeby jeebies.",
+            "url": "https://earther.gizmodo.com/the-release-of-1-billion-killer-gmo-mosquitoes-has-begu-1846800665",
+            "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/a5b6ef2edcf5f545647d355f3b84c2a1.jpg",
+            "publishedAt": "2021-04-30T21:05:00Z",
+            "content": "Tens of thousands of male mosquitoes are descending on the Florida Keys. But these are no ordinary mosquitoes: Theyre genetically modified, and they were planted around the state on purpose. Its part… [+4195 chars]"
+        },
+        {
+            
+                "id":24,"source": "kmbc",
+                "name": "KMBC Kansas City"
+,"country" : "us", "category" : "health",
+            "author": "KMBC 9 News Staff",
+            "title": "Unified Government: Outdoor mask mandate dropped in Wyandotte County - KMBC Kansas City",
+            "description": "New mask order aligns Wyandotte County with Kansas City, Missouri, and Jackson County.",
+            "url": "https://www.kmbc.com/article/unified-government-outdoor-mask-mandate-dropped-in-wyandotte-county-kansas-covid-19-coronavirus/36303753",
+            "urlToImage": "https://kubrick.htvapps.com/htv-prod-media.s3.amazonaws.com/images/man-in-mask-2-1593173394.jpg?crop=1.00xw:0.846xh;0,0&resize=1200:*",
+            "publishedAt": "2021-04-30T20:34:00Z",
+            "content": "KANSAS CITY, Kan. —Masks and social distancing are no longer required outdoors in Wyandotte County, the Unified Government of Wyandotte County/Kansas City Commission announced on Friday.\r\nThe UG Comm… [+2293 chars]"
+        },
+        {
+            
+                "id":25,"source": "usa-today",
+                "name": "USA Today"
+,"country" : "us", "category" : "health",
+            "author": "Jenna Ryu",
+            "title": "India is in crisis. Showing more empathy is the least we can do. - USA TODAY",
+            "description": "In India, doctors are begging for medical supplies and crematoriums are overflowing with dead bodies. How to tap into empathy to care for others.",
+            "url": "https://www.usatoday.com/story/life/health-wellness/2021/04/30/india-covid-cases-escalate-how-help-donate-show-empathy/4869483001/",
+            "urlToImage": "https://www.gannett-cdn.com/presto/2021/04/25/USAT/6f374e28-d5c3-4e63-bcfd-80d64a8f6dec-AP_Virus_Outbreak_India.jpg?crop=4983,2803,x0,y550&width=3200&height=1680&fit=bounds",
+            "publishedAt": "2021-04-30T19:23:20Z",
+            "content": "Officials say the U.S. is trying to help India deal with its coronavirus surge, which is straining that countrys health care system amid a record number of infections. (April 23)\r\nAP Domestic\r\nRight … [+7921 chars]"
+        },
+        {
+            
+                "id":26,"source": "npr",
+                "name": "NPR"
+,"country" : "us", "category" : "health",
+            "author": null,
+            "title": "Why Fauci And Others Say Skipping 2nd Dose Of COVID Vaccine Is Unwise : Goats and Soda - NPR",
+            "description": "Some folks are taking their first vaccine dose in a two-dose regimen, then deciding to skip the second one altogether. Or maybe to delay it longer than suggested. Is this a bad idea?",
+            "url": "https://www.npr.org/sections/goatsandsoda/2021/04/30/990187647/coronavirus-faq-is-it-a-big-deal-if-i-skip-or-delay-dose-2-of-my-covid-vaccine",
+            "urlToImage": "https://media.npr.org/assets/img/2021/04/30/slco-covid-vax_sh_06_wide-b3b34c380e3a5bcd5ec2bcba0329686fe1771679.jpg?s=1400",
+            "publishedAt": "2021-04-30T19:23:03Z",
+            "content": "Signs direct people arriving to get COVID-19 vaccines last week at the Mountain America Expo Center in Sandy, Utah.\r\nSpenser Heaps/Deseret News\r\nEach week, we answer \"frequently asked questions\" abou… [+5060 chars]"
+        },
+        {
+            
+                "id":27,"source": "ketv",
+                "name": "KETV Omaha"
+,"country" : "us", "category" : "health",
+            "author": "Chelsea Robinson",
+            "title": "Douglas County Health officials warn some variants are impacting younger people more severely - KETV Omaha",
+            "description": "Experts believe the variants spread 50-70% more easily than the original form.",
+            "url": "https://www.ketv.com/article/douglas-county-health-officials-warn-some-variants-are-impacting-younger-people-more-severely/36303067",
+            "urlToImage": "https://kubrick.htvapps.com/htv-prod-media.s3.amazonaws.com/images/coronavirus-covid-19-impact-1615576239.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*",
+            "publishedAt": "2021-04-30T19:21:00Z",
+            "content": "OMAHA, Neb. —Douglas County Health officials shared concerning news about COVID-19 variants on Friday. \r\nAccording to a press release from Douglas County Health Director Adi Pour, five variants of th… [+716 chars]"
+        },
+        {
+            
+                "id":29,"source": "livescience",
+                "name": "Live Science"
+,"country" : "us", "category" : "health",
+            "author": "Rachael Rettner",
+            "title": "Novel coronavirus really is seasonal, study suggests - Livescience.com",
+            "description": "Warm temperatures and long hours of sunlight may reduce the spread of COVID-19, the study found.",
+            "url": "https://www.livescience.com/climate-covid-19-seasonal-spread.html",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/v5TzJGShKmUd8mryQWDkJN-1200-80.jpg",
+            "publishedAt": "2021-04-30T19:08:54Z",
+            "content": "Warm temperatures and tropical climates may really help reduce the spread of COVID-9, a new study suggests.\r\nThe study found that places with warm temperatures and long hours of sunlight such as coun… [+3779 chars]"
+        },
+        {
+            
+                "id":30,"source": "ksl",
+                "name": "KSL.com"
+,"country" : "us", "category" : "health",
+            "author": "Jacob Klopfenstein, KSL.com",
+            "title": "338 more COVID-19 cases, 5 deaths, nearly 22K vaccinations reported Friday in Utah - KSL.com",
+            "description": "Utah's number of COVID-19 cases has increased by 338 on Friday, with five more deaths and 21,945 vaccinations reported, according to the Utah Department of Health.",
+            "url": "https://www.ksl.com/article/50157481/338-more-covid-19-cases-5-deaths-nearly-22k-vaccinations-reported-friday-in-utah",
+            "urlToImage": "https://img.ksl.com/slc/2816/281654/28165468.jpeg?filter=ksl/responsive_story_lg",
+            "publishedAt": "2021-04-30T18:51:56Z",
+            "content": "SALT LAKE CITY Utah's number of COVID-19 cases has increased by 338 on Friday, with five more deaths and 21,945 vaccinations reported, according to the Utah Department of Health.\r\nTwo of the deaths o… [+3612 chars]"
+        },
+        {
+            
+                "id":31,"source": "reuters",
+                "name": "Reuters"
+,"country" : "us", "category" : "health",
+            "author": "Krishna Das",
+            "title": "India coronavirus cases may peak next week - govt adviser - Reuters India",
+            "description": "India's coronavirus cases may peak between May 3-5, according to a mathematical model of a team of scientists advising the government, a few days earlier than a previous estimate as the virus has spread faster than expected.",
+            "url": "https://www.reuters.com/world/india/india-coronavirus-cases-may-peak-next-week-govt-adviser-2021-04-30/",
+            "urlToImage": "https://www.reuters.com/resizer/6MESihaDTSpjyx87WMswhGP-1eE=/1200x628/smart/cloudfront-us-east-2.images.arcpublishing.com/reuters/RKGVFEPY7RJYNPKO4YV6WJ6UOQ.jpg",
+            "publishedAt": "2021-04-30T18:27:00Z",
+            "content": "Indias coronavirus cases may peak between May 3-5, according to a mathematical model of a team of scientists advising the government, a few days earlier than a previous estimate as the virus has spre… [+1680 chars]"
+        },
+        {
+            
+                "id":32,"source": "sheknows",
+                "name": "SheKnows"
+,"country" : "us", "category" : "health",
+            "author": "Brianne Hogan",
+            "title": "6 Vitamins & Supplements You Should Not Take Together, According to Experts - SheKnows",
+            "description": "You know the drill: You have a ton of vitamins to take in a day but you’re not sure exactly when (or really if) you should take them all. And, while we should always turn to food for our vitamin and mineral intake, sometimes vitamin supplementation can help u…",
+            "url": "https://www.sheknows.com/health-and-wellness/articles/2440415/vitamin-interactions-dont-take-together/",
+            "urlToImage": "https://www.sheknows.com/wp-content/uploads/2021/04/vitamins-dont-take-together-experts.jpg?w=1024",
+            "publishedAt": "2021-04-30T18:16:00Z",
+            "content": "You know the drill: You have a ton of vitamins to take in a day but you’re not sure exactly when (or really if) you should take them all. And, while we should always turn to food for our vitamin and … [+4249 chars]"
+        },
+        {
+            
+                "id":33,"source": "wpri",
+                "name": "WPRI.com"
+,"country" : "us", "category" : "health",
+            "author": "Eli Sherman",
+            "title": "Here's how many people are vaccinated in every RI ZIP code - WPRI.com",
+            "description": "Vaccination rates vary widely across ZIP codes with at least 5,000 residents.",
+            "url": "https://www.wpri.com/target-12/map-heres-how-many-people-are-vaccinated-in-every-ri-zip-code/",
+            "urlToImage": "https://www.wpri.com/wp-content/uploads/sites/23/2021/04/37acdd951f854d47862ce5848cb70f9d.jpg?w=1280",
+            "publishedAt": "2021-04-30T17:53:40Z",
+            "content": "PROVIDENCE, R.I. (WPRI) — Rhode Island has at least partially vaccinated about half of its population, but vaccination rates still vary widely across different neighborhoods. \r\nA Target 12 analysis o… [+1381 chars]"
+        },
+        {
+            
+                "id":34,"source": "huffpost",
+                "name": "HuffPost"
+,"country" : "us", "category" : "health",
+            "author": "Catherine Pearson",
+            "title": "5 New Things We Learned About COVID-19 In April 2021 - HuffPost",
+            "description": "What's the latest on pregnancy and COVID-19 risk? Is facial paralysis a concern post-vaccination? Here's what we know now.",
+            "url": "https://www.huffpost.com/entry/new-things-covid-april-2021_l_608c1580e4b046202707059a",
+            "urlToImage": "https://img.huffingtonpost.com/asset/608c282f1e00003b48100a18.jpeg?ops=1778_1000",
+            "publishedAt": "2021-04-30T17:38:42Z",
+            "content": "The amount of information out there about the coronavirus is dizzying. Its hard to keep track of whats known, whats a myth and what guidance we should follow. Thats why weve rounded up five of the mo… [+6610 chars]"
+        },
+        {
+            
+                "id":35,"source": "google-news",
+                "name": "Google News"
+,"country" : "us", "category" : "health",
+            "author": null,
+            "title": "The Race to Vaccinate the World - Bloomberg Quicktake",
+            "description": null,
+            "url": "https://news.google.com/__i/rss/rd/articles/CBMiK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9LUVKNlV5dDlMT03SAQA?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2021-04-30T17:21:59Z",
+            "content": null
+        },
+        {
+            
+                "id":36,"source": "gizmodo",
+                "name": "Gizmodo.com"
+,"country" : "us", "category" : "health",
+            "author": "Ed Cara",
+            "title": "Scans of Medieval Skeletons Show Cancer Has Been Common Longer Than We Thought - Gizmodo",
+            "description": "Cancer may have been a bigger menace in medieval times than previously assumed, new research suggests. The study, based on X-ray and CT scans of preserved bones, estimates that around one in every 10 residents of medieval Britain died with cancer.",
+            "url": "https://gizmodo.com/scans-of-medieval-skeletons-show-cancer-has-been-common-1846798227",
+            "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/97acdf30f659eb91c0e1c96504cb8bca.jpg",
+            "publishedAt": "2021-04-30T17:21:00Z",
+            "content": "Cancer may have been a bigger menace in medieval times than previously assumed, new research this week suggests. The study, based on X-ray and CT scans of preserved bones, estimates that around one i… [+3325 chars]"
+        },
+        {
+            
+                "id":37,"source": "npr",
+                "name": "NPR"
+,"country" : "us", "category" : "health",
+            "author": "",
+            "title": "Is The Vaccine Rollout Doing Enough To End US Outbreak? : Shots - Health News - NPR",
+            "description": "New coronavirus cases are at their lowest level since October. Some health experts think the vaccination campaign deserves credit for tamping down the U.S. outbreak. But will the downturn last?",
+            "url": "https://www.npr.org/sections/health-shots/2021/04/30/992448089/u-s-vaccinations-may-be-reaching-a-tipping-point-to-stop-the-virus-experts-say",
+            "urlToImage": "https://media.npr.org/assets/img/2021/04/30/gettyimages-1232060421_wide-6dcf9ca53a41b02171a3744d99853ff2dc68e900.jpg?s=1400",
+            "publishedAt": "2021-04-30T17:17:41Z",
+            "content": "Around a third of the U.S. population has been fully vaccinated against COVID-19 after several months of a concerted push to immunize the country.\r\nDavid Paul Morris/Bloomberg via Getty Images\r\nNearl… [+5984 chars]"
+        },
+        {
+            
+                "id":38,"source": "new-york-times",
+                "name": "New York Times"
+,"country" : "us", "category" : "health",
+            "author": "Jan Hoffman, Erin Schaff",
+            "title": "Faith, Freedom, Fear: Rural America’s Covid Vaccine Skeptics - The New York Times",
+            "description": "Resistance is widespread in white, Republican communities like this one in Appalachia. But it’s far more complicated than just a partisan divide.",
+            "url": "https://www.nytimes.com/2021/04/30/health/covid-vaccine-hesitancy-white-republican.html",
+            "urlToImage": "https://static01.nyt.com/images/2021/04/21/science/00VIRUS-VAX-TENN-gospelhouse/merlin_186278148_b4887446-19fb-4d06-b529-7a83bcbb55a3-facebookJumbo.jpg",
+            "publishedAt": "2021-04-30T17:09:10Z",
+            "content": "So which trusted person will speak for the vaccine? Eva Fields?\r\nShe is a nurse-practitioner who treated one of the first local patients to die from Covid. Greeneville-raised, she has 24 relatives wh… [+1396 chars]"
+        },
+        {
+            
+                "id":39,"source": "yahoo",
+                "name": "Yahoo Entertainment"
+,"country" : "us", "category" : "health",
+            "author": "Reuters",
+            "title": "Russia records more than 400,000 excess deaths during pandemic -Reuters calculations - Yahoo News",
+            "description": "MOSCOW (Reuters) -Russia recorded more than 400,000 excess deaths from last April to this March during the COVID-19 pandemic, according to Reuters...",
+            "url": "https://news.yahoo.com/russia-records-more-400-000-170720598.html",
+            "urlToImage": "https://s.yimg.com/uu/api/res/1.2/jKzEHc5mKF4vlJyf3tNYVg--~B/aD01MTM7dz04MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/reuters.com/3d44b502ce6cfa3c11eb3736069d420d",
+            "publishedAt": "2021-04-30T17:07:20Z",
+            "content": "As he took office, the president noted four crises: the coronavirus pandemic, climate, economy and racial justice. Heres his progress on each Joe Biden at the White House on 26 January. Photograph: G… [+8683 chars]"
+        },
+        {
+            
+                "id":40,"source": "abc-news",
+                "name": "ABC News"
+,"country" : "us", "category" : "health",
+            "author": null,
+            "title": "'The worst is behind us': COVID virus ebbs, lending hope to nation lashed by disease - msnNOW",
+            "description": "As vaccinations increase, the U.S. is seeing fewer cases, hospitalizations and deaths caused by COVID-19, suggesting America may have turned a corner in the pandemic.",
+            "url": "https://abcnews.go.com/Politics/worst-us-covid-virus-ebbs-lending-hope-nation/story?id=77419441",
+            "urlToImage": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1ge8Vg.img?h=630&w=1200&m=6&q=60&o=t&l=f&f=jpg",
+            "publishedAt": "2021-04-30T16:41:30Z",
+            "content": "The virus causing COVID-19 has begun to recede, just slightly, in the U.S. \r\n As experts predicted, the pandemic is operating on less of a light switch than a dimmer -- dialing back and forth in diff… [+5570 chars]"
+        }
+])
+
+
+-----------------------------------------40 articles-------------------------------
+Update : Missed Article 28
