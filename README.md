@@ -10,7 +10,7 @@ Project Completed by : <li>Lakshmi Rajan</li><li>Pooja P</li> <li>Sam P Achankun
 1. Clone the repository.
 2. Open the folder using your IDE
 3. Create collection "articles" in MONGODB.
-4. Paste the Article Details  to monogdb (Copy paste the data in the file database to mongo cmd).
+4. Paste the Article Details  to monogdb (Copy Paste "data to be inserted" to mongo cmd).
 5. Run all 5 applications situated in each folder(All 5 Microservices mentioned below)
 6. All controller details is documented. Use SWAGGER UI to retrieve them.(http://localhost:{portnumber}/swagger-ui.html)
 
